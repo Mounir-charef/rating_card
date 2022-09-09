@@ -131,7 +131,11 @@ li:hover {
     margin-inline: auto;
 }
 
-
+@media only screen and (max-width: 400px){
+    .tanks-card ,.card {
+        max-width: 90%;
+    }
+}
 .ignore{
     display: none;
 }
