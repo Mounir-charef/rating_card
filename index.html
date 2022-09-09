@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="scripts.js" defer></script>
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <div class="container">
+        <div class="card">
+          <img src="images/icon-star.svg" alt="icon">
+          <h1 class="child"> How did we do? </h1>
+
+          <p class="child">
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+          </p>
+
+          <form class="child">
+
+            <div class="rate-container">
+              <label ><input type="radio" id="one" name="rate"></label>
+              <label ><input type="radio" id="two" name="rate"></label>
+              <label ><input type="radio" id="three" name="rate"></label>
+              <label ><input type="radio" id="four" name="rate"></label>
+              <label ><input type="radio" id="five" name="rate"></label>
+            </div>
+
+            <label ><input type="button" value=""></label>
+          </form>
+        </div>
+
+        <div class="tanks-card">
+          <p class="tanks">
+            You selected <span id="rating"></span> out of 5
+
+            Thank you!
+
+            We appreciate you taking the time to give a rating. If you ever need more support,
+            don’t hesitate to get in touch!
+          </p>
+        </div>
+
+  </div>
+</body>
+</html>

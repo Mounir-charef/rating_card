@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --Light-Grey-color: hsl(217, 12%, 63%);
+    --Medium-Grey-color: hsl(216, 12%, 54%);
+    --Dark-Blue-color: hsl(213, 19%, 18%);
+    --Very-Dark-Blue-color: hsl(216, 12%, 8%);
+
+}
+
+p {
+    font-size: 15px;
+}
+
+.tanks-card{
+    display: none;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(to bottom,var(--Light-Grey-color) 1% 2%,var(--Dark-Blue-color) 2% 90%);
+    max-width: 26%;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 25px;
+    color: var(--white-color);
+}
+
+.img{
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+.card input[type="radio"] {
+    display: none;
+}
+
+.card input[type="radio"]:checked + label {
+    border: solid 2px green;
+}
+
+.card label {
+    display: inline-block;
+    width: 1rem;
+    padding: 10px;
+    border: solid 2px #ccc;
+    transition: all 0.3s;
+}
