@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
+    font-weight: 400;
 }
 :root {
     --white-color: hsl(0, 0%, 100%);
@@ -19,10 +20,14 @@
 p {
     font-size: 15px;
 }
-
+h1 {
+    color: var(--white-color);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
 .container {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: var(--Very-Dark-Blue-color);
@@ -34,10 +39,74 @@ p {
     background-color: var(--Dark-Blue-color);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-items: center;
+    max-width: 25rem;
+    padding: 2rem;
+    border-radius: 1.5625rem;
+    gap: 1.5rem;
 }
+
+.card::before {
+    content: '';
+    display: block;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    background-color: hsla(217, 12%, 63%, 0.1);
+    background-image: url("images/icon-star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .tanks-card{
     display: none;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 1.2rem;
+
+}
+
+li{
+    background-color: hsla(217, 12%, 63%, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+}
+
+button{
+    color: var(--white-color);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--white-color);
+    color: var(--Orange);
+}
+
+li:focus{
+    background-color: var(--Orange);
+    color: var(--white-color);
+}
+
+li:hover {
+    background-color: var(--Light-Grey-color) ;
+    color: var(--white-color);
 }
