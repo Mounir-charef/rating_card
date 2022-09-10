@@ -4,9 +4,25 @@ const butts = document.querySelectorAll('li'),
     card = document.querySelector('.card'),
     tankCard = document.querySelector('.tanks-card');
 
+function addHover(index){
+    butts.forEach(btn => {
+        if(btn.dataset.tabindex <= index){
+            btn.classList.add('hover')
+        }
+    })
+}
+
+function removeHover(){
+    butts.forEach(btn =>{
+        btn.classList.remove('hover')
+    })
+}
+
 butts.forEach((btn) => {
     btn.addEventListener('click',()=>{
         rate.textContent = btn.textContent;
+        removeHover()
+        addHover(btn.dataset.tabindex);
     })
 })
 

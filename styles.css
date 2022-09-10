@@ -97,13 +97,12 @@ button:hover{
     color: var(--Orange);
 }
 
-li:focus{
-    background-color: var(--Light-Grey-color) ;
-    color: var(--white-color);
-}
-
 li:hover {
     background-color: var(--Orange);
+    color: var(--white-color);
+}
+.hover{
+    background-color: var(--Light-Grey-color) ;
     color: var(--white-color);
 }
 
