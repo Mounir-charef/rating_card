@@ -21,7 +21,7 @@ function removeHover(){
 butts.forEach((btn) => {
     btn.addEventListener('click',()=>{
         rate.textContent = btn.textContent;
-        removeHover()
+        removeHover();
         addHover(btn.dataset.tabindex);
     })
 })
