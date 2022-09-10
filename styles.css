@@ -97,7 +97,7 @@ button:hover{
     color: var(--Orange);
 }
 
-li:hover {
+li:hover, li:focus {
     background-color: var(--Orange);
     color: var(--white-color);
 }
