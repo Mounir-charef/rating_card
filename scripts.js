@@ -28,8 +28,8 @@ butts.forEach((btn) => {
 
 submit.addEventListener('click',()=>{
     if(rate.textContent){
-        card.classList.add('ignore');
-        tankCard.classList.remove('ignore');
+        card.style.display = 'none';
+        tankCard.style.display = 'flex';
     }else {
         alert('No Review was giving.. please give a feedback');
     }

@@ -8,10 +8,10 @@
     font-weight: 400;
 }
 :root {
-    --white-color: hsl(0, 0%, 100%);
+    --white-color: hsl(0, 0%, 93%);
     --Light-Grey-color: hsl(217, 12%, 63%);
     --Medium-Grey-color: hsl(216, 12%, 54%);
-    --Dark-Blue-color: hsl(213, 19%, 18%);
+    --Dark-Blue-color: hsl(215, 25%, 13%);
     --Very-Dark-Blue-color: hsl(216, 12%, 8%);
     --Orange: hsl(25, 97%, 53%);
 
@@ -19,6 +19,7 @@
 
 p {
     font-size: 15px;
+    color: var(--Light-Grey-color);
 }
 h1, h2 {
     color: var(--white-color);
@@ -44,6 +45,10 @@ h1, h2 {
     padding: 2rem;
     border-radius: 1.5625rem;
     gap: 1.5rem;
+}
+
+.tanks-card {
+    display: none;
 }
 
 .card::before {
@@ -116,7 +121,7 @@ li:hover, li:focus{
     background-image: url("images/illustration-thank-you.svg");
     background-repeat: no-repeat;
     background-position: center;
-    width: auto;
+    width: 20rem;
     min-height: 10rem;
 }
 
@@ -134,7 +139,4 @@ li:hover, li:focus{
     .tanks-card ,.card {
         max-width: 90%;
     }
-}
-.ignore{
-    display: none;
 }
